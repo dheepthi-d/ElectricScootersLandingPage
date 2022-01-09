@@ -434,7 +434,7 @@ img .banner{
     position:relative;
 }
 
-@media (max-width : 1300px){
+@media (max-width : 1000px){
      
     .toggle-button{
                display:flex;
