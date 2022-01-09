@@ -1,0 +1,468 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: whitesmoke;
+    color: black;
+    line-height: 1.6;
+    height:100vh;
+    overflow: hidden;
+}
+
+.navbar{
+    height: 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: linear-gradient(to right, rgb(231, 156, 191),rgb(253, 67, 67));
+    color:black;
+}
+
+.container{
+    width: 100%;
+    height:100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navbar-links ul{
+    margin:0;
+    padding:0;
+    display:flex;
+ }
+ 
+ .navbar-links li{
+     list-style:none;
+ }
+ 
+ .navbar-links li a{
+     font-size: 1.2vw;
+     font-family: 'Secular One', sans-serif;
+    text-decoration: none;
+    color:black;
+    padding:1rem;   
+    display:block;
+ }
+ 
+ .navbar-links li:hover{
+    
+     background: black;
+     color:white;
+     
+ }
+ .navbar-links li a:hover{
+     color:white;
+ }
+ 
+ .submenu1{
+     display:none;
+ }
+
+ .navbar-links li:hover .submenu1{
+     display:flex;
+     position:absolute;
+     background: linear-gradient(to right, rgb(231, 156, 191),rgb(253, 67, 67));
+ }
+
+ button{
+    
+     font-family: 'Secular One', sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     margin: 20px;
+     width: 100px;
+     height: 38px;
+     color: black;
+     cursor:pointer; 
+     border-radius: 10px;
+     transition: all 0.3s ease 0s;
+     background: linear-gradient(to left, #8dd0e4, #276699);
+ }
+ button:hover{
+     color: white;
+     background:black;
+ }
+ 
+ .toggle-button{
+     position:absolute;
+     top: 0.75rem;
+     right: 1rem;
+     display: none;
+     flex-direction:column;
+     justify-content:space-between;
+     width:30px;
+     height:21px;
+ }
+ 
+ .toggle-button .bar{
+     height:3px;
+     width:100%;
+     background-color:white;
+     border-radius:10px;
+ }
+ 
+ section#banner2{
+     display:none;
+ }
+ 
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    z-index:-1;
+}
+
+.carousel-container{
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-slide{
+    display:flex;
+    width:100;
+    height:500px;
+}
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 2%;
+    font-size: 30px;
+    color:white;
+       cursor: pointer;
+}
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 2%;
+    font-size: 30px;
+    color:white;
+    
+    cursor: pointer;
+}
+
+section h1{
+    font-size: 10rem;
+    background-image:linear-gradient(90deg,rgb(231, 175, 175),red);
+    background-size: 100% 5px;
+    background-repeat:no-repeat;
+    background-position: left bottom;
+}
+section h2{
+    position: relative;
+    font-size: 7vw;
+    color: black;
+    text-align: right;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image:linear-gradient(rgb(15, 2, 2),blue);
+    background-size: 100% 5px;
+    background-repeat:no-repeat;
+    background-position: left bottom;
+    text-decoration: none;
+    font-weight: 900;
+    
+}
+
+.gradient{
+    background-image: linear-gradient(90deg, rgb(214, 139, 139), rgb(156, 156, 243));
+    background-clip: text;
+    
+
+}
+
+.lead{
+    color: rgb(90, 20, 20);
+    position: inherit;
+    text-align: end;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    width: auto;
+}
+.built{
+    color:rgb(0, 0, 0) ;
+    font-size: 5vw;
+    align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: double;
+}
+.okinawa{
+    font-size: 8vw;
+    align-self: center;
+   
+    font-family: 'Secular One', sans-serif;
+    
+    text-shadow: 
+    0.05em 0.05em 0 rgb(219, 133, 133);
+   
+    
+    
+}
+
+video{
+    width: 100%;
+    position: relative;
+   height: 170%;
+}
+
+.connect{
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+map{
+    size: 20px;
+}
+section h3 .built{
+    background-image: none;
+}
+section h3 {
+    position: relative;
+    font-size: 3.7vw;
+    color: black;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image:linear-gradient(red,blue);
+    background-size: 100% 5px;
+    background-repeat:no-repeat;
+    background-position: left bottom;
+    text-decoration: none;
+    font-weight: 900;
+    }
+
+section h4{
+    width:90%;
+   
+    position: relative;
+    font-size: 1.5vw;
+    color: red;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: #ff0000; 
+    box-shadow: 
+    0 0 0 10px #ee6352,
+    0 0 0 20px #405378;
+   }
+
+@keyframes scroll{
+  0%{
+      transform: translateX(0);
+  }
+  100%{
+      transform: translateX(calc(-250px *7.5));
+  }
+}
+.slider{
+    height:100px;
+    margin:auto;
+    overflow: hidden;
+    position:relative;
+    width:auto;
+}
+
+.slider .slide-track{
+    animation :scroll 40s linear infinite;
+    display: flex;
+    width:calc(250px * 15);
+
+}
+
+.slider .slide{
+    height :100px;
+    width :500px;
+   
+}
+
+section#Find-us{
+    background-color: rgb(250, 154, 154);
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100px * 3.5));
+    }
+  }
+  .aslider{
+      height:150px;
+      overflow: hidden;
+      position:relative;
+      width:auto;
+  }
+  
+  .aslider .aslide-track{
+      animation :scroll 80s linear infinite;
+      display: flex;
+      width:calc(250px * 7);
+  
+  }
+  
+  .aslider .aslide{
+      height :150px;
+      width : 500px;
+     
+     
+  }
+.footer h2{
+    background-image: none;
+font-size: 2vw ;
+color:#8dd0e4
+}
+section#footer{
+    justify-content :end;
+}
+.footer-container{
+    width: 100%;
+    background-color: #212329;
+    padding: 4rem 0 4rem 0;
+}
+
+.footer{
+    width: 100%;
+    height:40vh;
+    background-color:#212329;
+    color:white;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:0 auto;
+}
+
+.footer-heading{
+    display:flex;
+    flex-direction: column;
+    margin-right:4rem;
+
+}
+
+.fooder-heading h2{
+    align-items: center;
+    color: #e0897d;
+    margin-bottom: 2 rem;
+}
+
+.footer-heading a{
+ color:white;
+ text-decoration: none;
+ margin-bottom:0.5rem;
+}
+
+.footer-heading a:hover{
+    color : red;
+    transition:0.3s ease-out;
+}
+
+.footer-email-form h2{
+    margin-bottom: 2rem;
+}
+#footer-email{
+    width:250px;
+    height:40px;
+    border-radius:4px;
+    border:none;
+    outline:none;
+    padding-left:0.5rem;
+    font-size: 1rem;
+    margin-bottom:1rem;
+}
+
+
+#footer-email::placeholder{
+    color:#b1b1b1;
+}
+
+#footer-email-btn{
+    width:100px;
+    height:40px;
+    border-radius:4px;
+    background-color: #f9423d;
+    outline:none;
+    border:none;
+    color:white;
+    font-size:1rem;
+}
+#footer-email-btn:hover{
+cursor:pointer;
+background-color:#337AF1;
+transition: all 0.4s ease-out;
+}
+.footer-email{
+    width:250px;
+    height:50px;
+    border-radius:4px;
+    outline:none;
+    border:none;
+    padding-left:0.5 rem;
+    font-size:1rem;
+    margin-bottom:1rem;
+}
+
+.section#Find-us{
+    background-image: none;
+}
+
+section#Find-us button{
+    width:150px;
+    height:70px;
+    font-size: 1.6vw;
+    background: linear-gradient(to left, #e63f3f, #470505); 
+    color:antiquewhite
+}
+
+
+img .banner{
+    position:relative;
+}
+
+@media (max-width : 1300px){
+     
+    .toggle-button{
+               display:flex;
+           }
+    .navbar-links{
+        display:none;
+              width:100%;
+              background: linear-gradient(to right, rgb(231, 156, 191),rgb(253, 67, 67));
+           }
+    .navbar{
+            flex-direction:column;
+            align-items:flex-start;
+        }
+    
+    .navbar-links ul{
+            width:100%;
+            flex-direction: column;
+    
+        }
+    .navbar-links a{
+            padding:0.5rem 1rem;
+    }  
+    .navbar-links.active{
+        display:flex;
+    
+    }
+    
+    .navbar-links.active .banner{
+        display:none;
+    }
+}
