@@ -275,7 +275,7 @@ section h4{
     margin:auto;
     overflow: hidden;
     position:relative;
-    width:auto;
+    width:100%;
 }
 
 .slider .slide-track{
